@@ -119,7 +119,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"assets/js/team.js":[function(require,module,exports) {
 function getTeam() {
-  fetch('https://cdn.contentful.com/spaces/bv76lgjagl2f/environments/master/entries?access_token=XAJ1wOYnMT2Aow6tufgnBbNDaU98fL0aJoB8ygy2ebA&content_type=teammate&include=1').then(function (response) {
+  fetch('https://cdn.contentful.com/spaces/bv76lgjagl2f/environments/master/entries?access_token=XAJ1wOYnMT2Aow6tufgnBbNDaU98fL0aJoB8ygy2ebA&content_type=teammate&include=1&order=appreanceorder').then(function (response) {
     return response.json();
   }).then(function (data) {
     var section = document.querySelector('.team');
