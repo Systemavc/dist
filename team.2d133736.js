@@ -130,7 +130,7 @@ function getTeam() {
       }).then(function (data) {
         var img = data.fields.file;
         var el = document.createElement('a');
-        el.setAttribute('data-name', item.fields.name);
+        el.setAttribute('data-name', item.fields.appreanceorder);
 
         if (item.fields.link) {
           el.href = item.fields.link;
